@@ -1,0 +1,166 @@
+.background-site
+{
+    background: url("img/fon.png") repeat;
+}
+
+.header-float-right
+{
+    float: right;
+}
+
+.header-float-left
+{
+    float: left;
+}
+
+.newspaper-title-description
+{
+    display: inline-block;
+}
+
+.newspaper-title-border
+{
+    width: 205px;
+    height: 80px;
+    padding: 8px;
+    margin: 4px;
+    border: 1px solid #000;
+}
+
+.newspaper-title
+{
+    font-size: 40px;
+    padding-bottom: 8px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #789;
+    line-height: 100px;
+}
+
+.newspaper-hr-line
+{
+    border-style: double;
+}
+
+.newspaper-title-size-m
+{
+    text-decoration: underline;
+}
+
+.newspaper-title-description
+{
+    line-height: 14px;
+    font-size: 14px;
+}
+
+.newspaper-header-title,
+.newspaper-title-size-m,
+.newspaper-article-title,
+.newspaper-article-title-m
+{
+    text-align: center;
+}
+
+.newspaper-header-title
+{
+    font-size: 14px;
+}
+
+.newspaper-article-one
+{
+    float: left;
+    column-rule: 1px solid #ccc;
+    -webkit-column-rule: 1px solid #ccc;
+    column-count: 3;
+    -webkit-column-count: 3;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.newspaper-article-title-s
+{
+    font-size: 16px;
+    text-align: center;
+}
+
+.newspaper-article
+{
+    display: inline-flex;
+}
+
+.newspaper-article-two
+{
+    float: right;
+}
+
+.newspaper-article-two-column
+{
+    column-rule: 1px solid #ccc;
+    -webkit-column-rule: 1px solid #ccc;
+    column-count: 2;
+    -webkit-column-count: 2;
+    font-size: 12px;
+}
+
+.newspaper-article-image
+{
+    text-align: center;
+}
+
+.newspaper-article-image-description
+{
+    color: lightslategrey;
+    font-style: italic;
+}
+
+.newspaper-article-hr
+{
+    width: 100px;
+    border: 1px dashed #000;
+}
+
+.newspaper-article-title
+{
+    margin: 10px auto;
+    color: #789;
+    font-size: 30px;
+    width: 1em;
+    line-height: 1em;
+    text-align: center;
+}
+
+.newspaper-article-white-space
+{
+    white-space: pre;
+}
+
+
+.newspaper-article-column-span-all
+{
+    column-span: all;
+    -webkit-column-span: all;
+
+}
+
+.newspaper-article-blockquote
+{
+    margin: 10px 20px;
+    padding: 15px;
+    font-style: italic;
+    font-size: 12px;
+    border: solid 1px #aebcc9;
+}
+
+p
+{
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    word-break: break-all;
+}
+
+p::first-letter
+{
+    font-family: 'Comfortaa', cursive;
+    font-size: 20px;
+    color: #778899;
+}

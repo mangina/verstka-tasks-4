@@ -1,0 +1,20 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Serif|Lobster|Comfortaa&subset=latin,cyrillic);
+
+.font-ptSerif
+{
+    font-family: 'PT Serif', serif;
+}
+
+.font-lobster
+{
+    font-family: 'Lobster', cursive;
+}
+
+.font-comfortaa
+{
+    font-family: 'Comfortaa', cursive;
+}
+
+
+
+
