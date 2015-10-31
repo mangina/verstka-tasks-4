@@ -37,11 +37,6 @@
     line-height: 100px;
 }
 
-.newspaper-hr-line
-{
-    border-style: double;
-}
-
 .newspaper-title-size-m
 {
     text-decoration: underline;
@@ -56,7 +51,8 @@
 .newspaper-header-title,
 .newspaper-title-size-m,
 .newspaper-article-title,
-.newspaper-article-title-m
+.newspaper-article-title-m,
+.newspaper-settings
 {
     text-align: center;
 }
@@ -64,6 +60,9 @@
 .newspaper-header-title
 {
     font-size: 14px;
+    border-bottom: 4px double #000;
+    border-top: 4px double #000;
+    padding: 5px 0;
 }
 
 .newspaper-article-one
@@ -86,6 +85,7 @@
 .newspaper-article
 {
     display: inline-flex;
+    border-top: 1px solid #000;
 }
 
 .newspaper-article-two
@@ -163,4 +163,125 @@ p::first-letter
     font-family: 'Comfortaa', cursive;
     font-size: 20px;
     color: #778899;
+}
+
+input[class=font-size-12],
+input[class=font-size-16],
+input[class=font-size-20],
+input[class=font-family-serif],
+input[class=font-family-times],
+input[class=font-family-arial],
+input[class=font-theme-blue],
+input[class=font-theme-black]
+{
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+span
+{
+    display: block;
+}
+
+label
+{
+    width: 150px;
+    display: inline-block;
+    margin: 5px 0;
+    background: #789;
+    padding: 5px;
+    border-radius: 2px;
+    color: white;
+    font-weight: bold;
+}
+
+label:hover
+{
+    cursor: pointer;
+}
+
+input[class=font-size-12]:checked ~ article div p,
+input[class=font-size-12]:checked ~ article div .newspaper-article-blockquote,
+input[class=font-size-12]:checked ~ article div .newspaper-article-image
+{
+    font-size: 12px;
+}
+
+input[class=font-size-12]:checked ~ article div .newspaper-article-title-s
+{
+    font-size: 16px;
+}
+
+input[class=font-size-16]:checked ~ article div p,
+input[class=font-size-16]:checked ~ article div .newspaper-article-blockquote,
+input[class=font-size-16]:checked ~ article div .newspaper-article-image
+{
+    font-size: 16px;
+}
+
+input[class=font-size-16]:checked ~ article div .newspaper-article-title-s
+{
+    font-size: 20px;
+}
+
+input[class=font-size-20]:checked ~ article div p,
+input[class=font-size-20]:checked ~ article div .newspaper-article-blockquote,
+input[class=font-size-20]:checked ~ article div .newspaper-article-image
+{
+    font-size: 20px;
+}
+
+input[class=font-size-20]:checked ~ article div .newspaper-article-title-s
+{
+    font-size: 24px;
+}
+
+input[class=font-family-serif]:checked ~ article div p,
+input[class=font-family-serif]:checked ~ article div .newspaper-article-blockquote,
+input[class=font-family-serif]:checked ~ article div .newspaper-article-image
+{
+    font-family: 'PT Serif', serif;
+}
+
+input[class=font-family-times]:checked ~ article div p,
+input[class=font-family-times]:checked ~ article div .newspaper-article-blockquote,
+input[class=font-family-times]:checked ~ article div .newspaper-article-image
+{
+    font-family: 'Times New Roman', serif;
+}
+
+input[class=font-family-arial]:checked ~ article div p,
+input[class=font-family-arial]:checked ~ article div .newspaper-article-blockquote,
+input[class=font-family-arial]:checked ~ article div .newspaper-article-image
+{
+    font-family: Arial, sans-serif;
+}
+
+input[class=font-theme-blue]:checked ~ article div .newspaper-article-title-s,
+input[class=font-theme-blue]:checked ~ article div .newspaper-article-title-m
+{
+    color: #aebcc9;
+}
+
+input[class=font-theme-blue]:checked ~ article div p,
+input[class=font-theme-blue]:checked ~ article div .newspaper-article-blockquote,
+input[class=font-theme-blue]:checked ~ article div .newspaper-article-image
+{
+    color: #fff;
+}
+
+input[class=font-theme-blue]:checked ~ article
+{
+    background: url("img/fon-black.png") repeat;
+}
+
+input[class=font-theme-black]:checked ~ article div p
+{
+    color: #000;
+}
+
+input[class=font-theme-black]:checked ~ article
+{
+    background: url("img/fon.png") repeat;
 }
